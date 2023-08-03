@@ -11,7 +11,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App container">
       <Header />
       {/* Contenido principal de tu página */}
       <h1>Bienvenido a mi página</h1>
