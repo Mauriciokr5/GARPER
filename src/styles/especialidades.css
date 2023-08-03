@@ -1,0 +1,20 @@
+.card-title{
+    font-family: "Times New Roman", Times, serif;
+    color: #919191;
+}
+
+.card-img-top{
+    padding: 20px;
+    
+}
+
+.card{
+    border: none;
+    background-color: #eeeeee;
+    margin: 20px;
+}
+
+.icoEsp{
+    height: 20vh;
+    
+}

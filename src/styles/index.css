@@ -4,7 +4,7 @@ nav {
 
 }
 
-/* html {
+html {
     background-color: black;
     color: aliceblue !important;
 
@@ -13,7 +13,7 @@ nav {
     background-color: black;
     color: aliceblue !important;
 
-} */
+}
 
 
 .popup-overlay {
@@ -91,19 +91,64 @@ h1{
 .card-title{
     font-family: "Times New Roman", Times, serif;
     color: #919191;
+    font-size: 22px;
 }
 
 .card-img-top{
     padding: 20px;
-    
+    max-height: 150px;
+    width: auto;
 }
 
 .card{
     border: none;
     background-color: #eeeeee;
-    margin: 20px;
+    border-radius: 10px !important;
+    
+    max-height: 50vh;
+    max-width: 300px;
+    
+}
+@media (min-width: 991px) {
+    .logoleft {
+        height: 40vh;
+    }
+}
+.card-text{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card-body{
+    margin-bottom: 10px;
 }
 
 .icoEsp{
-    height: 20vh;
+    
+    
+}
+
+/* Cambia el color de los botones del carrusel */
+/* .carousel-control-prev,
+.carousel-control-next {
+  background-color: #f00; 
+  color: #000; 
+} */
+
+
+.especialidadesSec{
+    background-image: linear-gradient(to bottom, #000, #393d42) !important;
+
+    padding: 20px 0px 20px 0px;
+}
+
+.cardgroupstyle{
+    display: flex;
+    align-items: center;
+    padding: 5vw;
+    margin: 10px;
+}
+
+.colesp{
+    padding: 10px;
 }
