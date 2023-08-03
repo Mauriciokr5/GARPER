@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // import './Popup.css'; // Importa el archivo de estilos
+import logoCompleto from '../images/logoCompleto.png';
 
 function Popup({ onClose }) {
     useEffect(() => {
@@ -33,12 +34,7 @@ function Popup({ onClose }) {
     return (
         <div className="popup-overlay" onClick={handleOverlayClick}>
             <div className="popup-content">
-                <img
-                    className="popup-image"
-                    src="logo.jpg"
-                    alt="Popup Image"
-                    onClick={handleOverlayClick}
-                />
+                <img className="popup-image" src={logoCompleto} alt="Logo" onClick={handleOverlayClick}></img>
             </div>
         </div>
     );
