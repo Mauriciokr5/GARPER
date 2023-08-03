@@ -155,7 +155,7 @@ h1{
 
 .mainTitle{
     font-size: 57px;
-    color: #b18d57;
+    color: #f3ca4c;
     margin-top: 20px;
 }
 
@@ -171,3 +171,13 @@ h1{
     height: auto; /* Maintain aspect ratio */
     min-width: 280px;
 }
+
+.text-golden {
+    color: #ffd700; /* Código de color dorado */
+  }
+
+
+.footercontacto p, .footercontacto h5{
+    text-align: right;
+}
+  

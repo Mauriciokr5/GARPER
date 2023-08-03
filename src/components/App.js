@@ -12,6 +12,7 @@ import Popup from './Popup'; // Importa el componente Popup
 import Header from './Header';
 import Home from './Home';
 import Especialidades from './Especialidades';
+import Footer from './Footer';
 
 
 function App() {
@@ -27,6 +28,8 @@ function App() {
       <Header />
       <Home />
       <Especialidades />
+      <Footer />
+
       {showPopup && <Popup onClose={handleClosePopup} />}
       
       {/* <Router>
