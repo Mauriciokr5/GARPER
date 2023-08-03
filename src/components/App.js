@@ -24,16 +24,20 @@ function App() {
   return (
 
     <div className="App">
+      <Header />
+      <Home />
+      <Especialidades />
+      {showPopup && <Popup onClose={handleClosePopup} />}
       
-      <Router>
+      {/* <Router>
         <Header />
         
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/Especialidades" element={<Especialidades />}></Route>
         </Routes>
-        {/* {showPopup && <Popup onClose={handleClosePopup} />} */}
-      </Router>
+        {showPopup && <Popup onClose={handleClosePopup} />}
+      </Router> */}
     </div>
   );
 }

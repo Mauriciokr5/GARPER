@@ -102,7 +102,7 @@ h1{
 
 .card{
     border: none;
-    background-color: #eeeeee;
+    background-color: rgba(255, 255, 255, .7);
     border-radius: 10px !important;
     
     max-height: 50vh;
@@ -137,7 +137,7 @@ h1{
 
 
 .especialidadesSec{
-    background-image: linear-gradient(to bottom, #000, #393d42) !important;
+    background-image: linear-gradient(to bottom, #000, #b18d57) !important;
 
     padding: 20px 0px 20px 0px;
 }
@@ -151,4 +151,23 @@ h1{
 
 .colesp{
     padding: 10px;
+}
+
+.mainTitle{
+    font-size: 57px;
+    color: #b18d57;
+    margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+    .mainTitle {
+        font-size: 46px;
+        
+    }
+}
+
+.mainLogo{
+    width: 30%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    min-width: 280px;
 }
