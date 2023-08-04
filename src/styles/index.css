@@ -1,20 +1,12 @@
 nav {
     background-color: black;
     color: aliceblue !important;
-
 }
 
-html {
-    background-color: black;
-    color: aliceblue !important;
-
+.custom-toggler {
+    border-color: white;
+    color:  white; 
 }
-#root {
-    background-color: black;
-    color: aliceblue !important;
-
-}
-
 
 .popup-overlay {
     position: fixed;
@@ -128,16 +120,8 @@ h1{
     
 }
 
-/* Cambia el color de los botones del carrusel */
-/* .carousel-control-prev,
-.carousel-control-next {
-  background-color: #f00; 
-  color: #000; 
-} */
-
-
 .especialidadesSec{
-    background-image: linear-gradient(to bottom, #000, #b18d57) !important;
+    background-image: linear-gradient(to bottom, #b18d57, #7b623c ) !important;
 
     padding: 20px 0px 20px 0px;
 }
@@ -173,11 +157,73 @@ h1{
 }
 
 .text-golden {
-    color: #ffd700; /* Código de color dorado */
-  }
+    color: #c6c2bd; /* Código de color dorado */
+    margin-right: 10px;
+}
 
 
 .footercontacto p, .footercontacto h5{
-    text-align: right;
+    
 }
-  
+
+.footerLogo{
+    width: 30%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    min-width: 280px;
+}
+
+.footerSocialMediaNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hidehrfooter{
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .footerSocialMediaNav {
+        text-align: center;
+    }
+    .hidehrfooter{
+        display: inline;
+    }
+}
+
+
+.leyendaDerechos{
+    text-align: right;
+    color: #c6c2bd;
+}
+
+.footerStyle{
+    color: #c6c2bd !important;
+}
+
+/* Estilo para colocar elementos en bloques verticales */
+.footernav a {
+    display: block;
+    margin-bottom: 5px; /* Espacio entre los elementos */
+    color: #c6c2bd !important;
+    text-decoration: none;
+}
+
+.footernav a:hover {
+    text-decoration: underline;
+}
+
+
+.contactodiv{
+    background-color: #b18d57;
+    padding: 100px;
+}
+
+.backFirma{
+    background-color: aliceblue;
+    padding: 50px;
+}
+
+.logofirma{
+    width: 100%;
+}

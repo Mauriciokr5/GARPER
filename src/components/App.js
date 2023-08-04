@@ -11,7 +11,9 @@ import {
 import Popup from './Popup'; // Importa el componente Popup
 import Header from './Header';
 import Home from './Home';
+import Firma from './Firma'
 import Especialidades from './Especialidades';
+import Contacto from './Contacto';
 import Footer from './Footer';
 
 
@@ -27,7 +29,9 @@ function App() {
     <div className="App">
       <Header />
       <Home />
+      <Firma />
       <Especialidades />
+      <Contacto />
       <Footer />
 
       {showPopup && <Popup onClose={handleClosePopup} />}

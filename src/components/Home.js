@@ -19,14 +19,14 @@ const Home = () => {
         left: 0,
         width: '100%',
         height: '100%',
-        background: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1))', // Gradiente lineal semitransparente
+        background: 'linear-gradient(rgba(0, 0, 0, 0.8), rgba(177, 141, 87, 0.3))', // Gradiente lineal semitransparente
       };
 
     return (
         <div style={containerStyle}>
             <div style={overlayStyle} className="d-flex align-items-center">
                 <Container>
-                    <img className="mainLogo" src={logoCompleto} alt="Logo" ></img>
+                    {/* <img className="mainLogo" src={logoCompleto} alt="Logo" ></img> */}
                     <h1 className='mainTitle'>Firma dedicada al <br></br> litigio y asesoría en materia penal.</h1>
                 </Container>
                 

@@ -9,7 +9,7 @@ const CardCarousel = ({ cardData, cardsPerSlide }) => {
     const endIndex = startIndex + cardsPerSlide;
 
     const cardsInSlide = cardData.slice(startIndex, endIndex).map((card, index) => (
-        <Col md={6} className="d-flex justify-content-center colesp">
+      <Col key={index} md={6} className="d-flex justify-content-center colesp">
         <Card className="align-items-center" >
           <Card.Img className="icoEsp" variant="top" src={card.imageUrl} alt={`Card ${index}`} />
           <Card.Body>
@@ -17,15 +17,15 @@ const CardCarousel = ({ cardData, cardsPerSlide }) => {
             <Card.Text>{card.description}</Card.Text>
           </Card.Body>
         </Card>
-    
-        </Col>
-        
+
+      </Col>
+
     ));
 
     return (
       <Carousel.Item key={slideIndex} >
         <div className="d-flex justify-content-center">
-            <CardGroup className='cardgroupstyle'><Row>{cardsInSlide}</Row></CardGroup>
+          <CardGroup className='cardgroupstyle'><Row>{cardsInSlide}</Row></CardGroup>
         </div>
       </Carousel.Item>
     );
