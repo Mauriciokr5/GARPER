@@ -31,7 +31,7 @@ nav {
 }
 
 .popup-image {
-    min-width: 400px;
+    min-width: 100px;
     width: 50%;
     animation: fade-in 1s;
 }
@@ -121,7 +121,8 @@ h1{
 }
 
 .especialidadesSec{
-    background-image: linear-gradient(to bottom, #b18d57, #7b623c ) !important;
+    /* background-image: linear-gradient(to bottom, #b18d57, #7b623c ) !important; */
+    background-color: #b18d57;
 
     padding: 20px 0px 20px 0px;
 }
@@ -222,8 +223,47 @@ h1{
 .backFirma{
     background-color: aliceblue;
     padding: 50px;
+    margin: 5vh 0vh;
+    text-align: justify;
 }
 
 .logofirma{
     width: 100%;
+    max-width: 450px;
+    margin: 20px 0px ;
+}
+
+
+
+.overlayfirma{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+
+
+}
+
+.hidehr{
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .logofirma{
+        max-width: 300px;
+    }
+    .overlayfirma{
+        position: static;
+    }
+    .backFirma{
+        padding: 20px;
+    }
+    .contactodiv{
+        padding: 20px;
+    }
+    .hidehr{
+        display: block;
+    }
 }

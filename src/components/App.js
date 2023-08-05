@@ -29,22 +29,14 @@ function App() {
     <div className="App">
       <Header />
       <Home />
-      <Firma />
+      
       <Especialidades />
+      <Firma />
       <Contacto />
       <Footer />
 
       {showPopup && <Popup onClose={handleClosePopup} />}
       
-      {/* <Router>
-        <Header />
-        
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/Especialidades" element={<Especialidades />}></Route>
-        </Routes>
-        {showPopup && <Popup onClose={handleClosePopup} />}
-      </Router> */}
     </div>
   );
 }

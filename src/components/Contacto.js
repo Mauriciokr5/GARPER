@@ -21,8 +21,6 @@ const Contacto = () => {
 
     return (
         <div className='contactodiv'>
-
-
             <Container>
                 <Row>
                     <Col md={6}>
@@ -31,6 +29,7 @@ const Contacto = () => {
                         <p>Dirección: Calle Principal #123, Ciudad</p>
                         <p>Tel. 55 4502 5100</p>
                         <p>contacto.garper@gmail.com</p>
+                        <hr className='hidehr'></hr>
                     </Col>
                     <Col md={6}>
                         <Form onSubmit={handleSubmit}>
@@ -79,8 +78,8 @@ const Contacto = () => {
                                 />
                             </Form.Group>
 
-                            <Button variant="primary" type="submit">
-                                Enviar Mensaje
+                            <Button type="submit">
+                                Enviar
                             </Button>
                         </Form>
                     </Col>
