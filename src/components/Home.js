@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
 import garperhome from '../images/garperhome.jpg'
 import logoCompleto from '../images/logoCompleto.png';
 
@@ -19,7 +19,7 @@ const Home = () => {
         left: 0,
         width: '100%',
         height: '100%',
-        background: 'linear-gradient(rgba(0, 0, 0, 0.8), rgba(177, 141, 87, 0.3))', // Gradiente lineal semitransparente
+        background: 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))', // Gradiente lineal semitransparente
       };
 
     return (
@@ -27,7 +27,12 @@ const Home = () => {
             <div style={overlayStyle} className="d-flex align-items-center">
                 <Container>
                     {/* <img className="mainLogo" src={logoCompleto} alt="Logo" ></img> */}
-                    <h1 className='mainTitle'>Firma dedicada al <br></br> litigio y asesoría en materia penal.</h1>
+                    <Row>
+                        <Col lg={7}>
+                        <h1 className='mainTitle'>Firma dedicada al litigio y asesoría en materia juridica y contable.</h1>
+                        </Col>
+                    </Row>
+                    
                 </Container>
                 
             </div>

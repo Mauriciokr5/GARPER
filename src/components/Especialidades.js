@@ -19,12 +19,30 @@ import familia from '../images/familia.png'
 import martillo from '../images/martillo.png'
 import cajafuerte from '../images/cajafuerte.png'
 
+import garperfirma from '../images/garperfirma.jpg';
+
 
 const Especialidades = () => {
+
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+    const cardsPerSlide = screenWidth > 768 ? 2 : 1;
     const cardData = [
         {
             title: 'Derecho Mercantil',
-            description: 'Resolvemos el conflicto de intereses que se dan entre comerciantes regulando y protegiendo los actos de comercio',
+            description: 'Resolvemos el conflicto de intereses que se dan entre comerciantes regulando y protegiendo los actos de comercio.',
             imageUrl: handshake,
         },
         {
@@ -75,9 +93,21 @@ const Especialidades = () => {
         // ... Agrega más objetos de tarjeta según sea necesario
     ];
 
-    const cardsPerSlide = 2;
+    const containerStyle = {
+        backgroundImage: `url(${garperfirma})`,
+        backgroundColor:'#b18d57',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center',
+        position: 'relative', // Asegura que el contenedor sea relativo para posicionar elementos hijos
+        minHeight: '70vh', // Altura de la ventana visible, ajusta según sea necesario
+        
+    };
+
+    
 
     return (
+        <div  style={containerStyle}>
         <div className='especialidadesSec'>
             <Container >
                 <Row>
@@ -94,7 +124,7 @@ const Especialidades = () => {
             </Container>
         </div>
 
-
+        </div>
 
     );
 };

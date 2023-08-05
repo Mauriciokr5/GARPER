@@ -7,12 +7,14 @@ import garperfirma from '../images/garperfirma.jpg';
 const Firma = () => {
 
     const containerStyle = {
-        backgroundImage: `url(${garperfirma})`,
+        // backgroundImage: `url(${garperfirma})`,
+        backgroundColor:'#b18d57',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center center',
         position: 'relative', // Asegura que el contenedor sea relativo para posicionar elementos hijos
         minHeight: '70vh', // Altura de la ventana visible, ajusta según sea necesario
+        
     };
 
 
@@ -24,7 +26,7 @@ const Firma = () => {
                         <Col lg={{ span: 4, offset: 1 }} className="order-lg-2 d-flex align-items-center justify-content-center">
                             <img className="logofirma" src={logoCompleto} alt="Logo" ></img>
                         </Col>
-                        <Col lg={7} className=' order-lg-1 '>
+                        <Col lg={6} className=' order-lg-1 '>
                             <div className='backFirma '>
                                 <h1>Nuestra firma</h1>
                                 <p>

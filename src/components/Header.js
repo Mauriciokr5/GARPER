@@ -34,7 +34,7 @@ const Header = () => {
                     <Navbar.Brand href="/" className="logoMid">
                         <img src={logo} alt="Logo" className="logo" ></img>
                     </Navbar.Brand>
-                    <Nav.Link href="#Empresas">Empresas</Nav.Link>
+                    <Nav.Link href="#Clientes">Clientes</Nav.Link>
                     <Nav.Link href="#Contacto">Contacto</Nav.Link>
                 </Nav>
             </Navbar.Collapse>

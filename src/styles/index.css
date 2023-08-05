@@ -74,6 +74,11 @@ nav {
 nav a { 
     color: aliceblue !important;
     padding-left: 20px;
+    
+}
+
+.nav-link{
+    font-size: 17px;
 }
 
 h1{
@@ -96,9 +101,9 @@ h1{
     border: none;
     background-color: rgba(255, 255, 255, .7);
     border-radius: 10px !important;
-    
+    height: 390px;
     max-height: 50vh;
-    max-width: 300px;
+    width: 280px;
     
 }
 @media (min-width: 991px) {
@@ -109,22 +114,32 @@ h1{
 .card-text{
     font-size: 16px;
     margin-bottom: 10px;
+    text-align: justify;
+    word-spacing: 1px;
+    word-break: break-all;
+    hyphens: auto;
 }
 
 .card-body{
     margin-bottom: 10px;
 }
 
-.icoEsp{
-    
-    
-}
 
-.especialidadesSec{
-    /* background-image: linear-gradient(to bottom, #b18d57, #7b623c ) !important; */
-    background-color: #b18d57;
+/* .especialidadesSec{
+    background-image: linear-gradient(to bottom, #b18d57, #7b623c ) !important;
+    
 
     padding: 20px 0px 20px 0px;
+} */
+
+.especialidadesSec{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(177, 141, 87, 1), rgba(0, 0, 0, 0));
+    /* background: rgba(177, 141, 87, .7); */
 }
 
 .cardgroupstyle{
@@ -140,7 +155,7 @@ h1{
 
 .mainTitle{
     font-size: 57px;
-    color: #f3ca4c;
+    color: #b18d57;
     margin-top: 20px;
 }
 
@@ -160,11 +175,6 @@ h1{
 .text-golden {
     color: #c6c2bd; /* Código de color dorado */
     margin-right: 10px;
-}
-
-
-.footercontacto p, .footercontacto h5{
-    
 }
 
 .footerLogo{
@@ -221,10 +231,11 @@ h1{
 }
 
 .backFirma{
-    background-color: aliceblue;
+    background-color: none;
     padding: 50px;
     margin: 5vh 0vh;
-    text-align: justify;
+    text-align: left;
+    color:white;
 }
 
 .logofirma{
@@ -242,8 +253,6 @@ h1{
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-
-
 }
 
 .hidehr{
