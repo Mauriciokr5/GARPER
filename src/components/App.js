@@ -15,6 +15,7 @@ import Firma from './Firma'
 import Especialidades from './Especialidades';
 import Contacto from './Contacto';
 import Footer from './Footer';
+import Clientes from './Clientes';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
       <Home />
       <Firma />
       <Especialidades />
+      <Clientes />
       
       <Contacto />
       <Footer />

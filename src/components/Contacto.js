@@ -20,7 +20,7 @@ const Contacto = () => {
     };
 
     return (
-        <div className='contactodiv'>
+        <div className='contactodiv' id='Contacto'>
             <Container>
                 <Row>
                     <Col md={6}>
@@ -30,6 +30,15 @@ const Contacto = () => {
                         <p>Tel. 55 4502 5100</p>
                         <p>contacto.garper@gmail.com</p>
                         <hr className='hidehr'></hr>
+                        <div style={{ position: 'relative', width: '100%', paddingTop: '75%' }}>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.9153723849391!2d-99.2323235242238!3d19.383804761036043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201ab038aed8d%3A0x93116e55ccf6fc62!2sPaso%20De%20La%20Laja%202%2C%20La%20Mexicana%2C%20%C3%81lvaro%20Obreg%C3%B3n%2C%20%C3%81lvaro%20Obreg%C3%B3n%2C%2001260%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1691266179601!5m2!1ses-419!2smx"
+                                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: '0' }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
                     </Col>
                     <Col md={6}>
                         <Form onSubmit={handleSubmit}>

@@ -107,12 +107,12 @@ const Especialidades = () => {
     
 
     return (
-        <div  style={containerStyle}>
+        <div  style={containerStyle} id='Especialidades'>
         <div className='especialidadesSec'>
             <Container >
                 <Row>
                     <Col className="d-flex align-items-center justify-content-center" lg={4}>
-                        <h1>Áreas de Especialidad</h1>
+                        <h1 className='espTitle'>Áreas de Especialidad</h1>
                     </Col>
                     <Col>
                         <CardCarousel cardData={cardData} cardsPerSlide={cardsPerSlide} />

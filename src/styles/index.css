@@ -1,12 +1,125 @@
-nav {
-    background-color: black;
-    color: aliceblue !important;
+:root {
+    --main-color: #b18d57;/*rgba(177,141,87,)*/
+    --sec-color: #2E3532;/*rgba(46,53,50,)*/
+    --thr-color: #FFFCF2;/*rgba(255,252,242,)*/
+    --four-color: #931621;/**/
+    --fift-color: #58A4B0;/**/
+
+    --main-font: "Times New Roman", Times, serif;
+    --sec-font: 'Lato', sans-serif;
+
+
+
+    --nav-font: var(--main-font);
+    --nav-font-size: 22px;
+    --nav-font-color: var(--thr-color);
+    --nav-bg-color: var(--sec-color);
+
+
+
+    --home-font: var(--main-font);
+    --home-font-size: 57px;
+    --home-font-color: var(--main-color);
+    --home-ov-bg-color: linear-gradient(rgba(46,53,50,0), rgba(46,53,50,1));
+
+
+
+    --firma-font-title: var(--main-font);
+    --firma-font-title-size: 22px;
+    --firma-font-title-color: var(--thr-color);
+
+    --firma-font: var(--main-font);
+    --firma-font-size: 22px;
+    --firma-font-color: var(--thr-color);
+
+    --firma-txt-align: justify;
+    --firma-bg-color: var(--sec-color);
+    --firma-ov-bg-color: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+
+
+
+    --esp-font-title: var(--main-font);
+    --esp-font-title-size: 22px;
+    --esp-font-title-color: var(--thr-color);
+
+    --esp-font-subt: var(--main-font);
+    --esp-font-subt-size: 22px;
+    --esp-font-subt-color: var(--thr-color);
+
+    --esp-font: var(--main-font);
+    --esp-font-size: 22px;
+    --esp-font-color: var(--thr-color);
+
+    --esp-txt-align: justify;
+    --esp-bg-color: var(--sec-color);
+    --esp-ov-bg-color: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+
+
+
+    --clientes-font-title: var(--main-font);
+    --clientes-font-title-size: 22px;
+    --clientes-font-title-color: var(--thr-color);
+
+    --clientes-font: var(--main-font);
+    --clientes-font-size: 22px;
+    --clientes-font-color: var(--thr-color);
+
+    --clientes-txt-align: justify;
+    --clientes-bg-color: var(--sec-color);
+    --clientes-ov-bg-color: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+
 }
 
-.custom-toggler {
-    border-color: white;
-    color:  white; 
+/*-----------------------------Header--------------------------*/
+nav {
+    background-color: var(--nav-bg-color);
 }
+
+nav a {
+    color: var(--nav-font-color) !important;
+    padding-left: 20px;
+    font-family: var(--nav-font);
+}
+
+.logo {
+    display: block;
+    width: 50px;
+    height: auto;
+}
+
+@media (max-width: 991px) {
+    .logoMid {
+        display: none;
+    }
+}
+
+@media (min-width: 991px) {
+    .logoleft {
+        display: none;
+    }
+}
+
+.nav-link {
+    font-size: var(--nav-font-size);
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(177,141,87, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+}
+
+.custom-toggler.navbar-toggler {
+    margin-right: 10px;
+    border: 0px;
+}
+
+@media (min-width: 991px) {
+    .logoleft {
+        height: 40vh;
+    }
+}
+
+/*-----------------------------Popup--------------------------*/
 
 .popup-overlay {
     position: fixed;
@@ -50,136 +163,274 @@ nav {
     opacity: 0;
 }
 
-/* Initially show the logo */
-.logo {
-    display: block;
-    width: 50px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+
+/*-----------------------------Home--------------------------*/
+
+
+.mainLogo {
+    width: 30%;
+    height: auto;
+    min-width: 280px;
 }
 
-/* Hide the logo when the header collapses */
+.mainTitle {
+    font-size: var(--home-font-size);
+    color: var(--home-font-color);
+    margin-top: 20px;
+    font-family: var(--home-font);
+}
+
+.overlayHome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--home-ov-bg-color);
+
+}
+
+.containerStyleHome {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    height: 70vh;
+}
+
 @media (max-width: 991px) {
-    .logoMid {
-        display: none;
+    .mainTitle {
+        font-size: 46px;
+
     }
 }
 
-@media (min-width: 991px) {
-    .logoleft {
-        display: none;
-    }
-}
+/*-----------------------------Firma--------------------------*/
 
-
-nav a { 
-    color: aliceblue !important;
-    padding-left: 20px;
+.backFirma {
+    background-color: var(--firma-bg-color);
+    padding: 50px;
+    margin: 5vh 0vh;
+    text-align: left;
     
 }
 
-.nav-link{
-    font-size: 17px;
+.backFirma h1 {
+    font-family: var(--firma-font-title);
+    text-align: var(--firma-txt-align);
+    color: var(--firma-font-title-color);
 }
 
-h1{
-    font-family: "Times New Roman", Times, serif ;
+.backFirma p {
+    font-family: var(--firma-font);
+    text-align: var(--firma-txt-align);
+    color: var(--firma-font-color);
 }
 
-.card-title{
-    font-family: "Times New Roman", Times, serif;
-    color: #919191;
-    font-size: 22px;
+
+.logofirma {
+    width: 100%;
+    max-width: 450px;
+    margin: 20px 0px;
 }
 
-.card-img-top{
+.overlayfirma {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--firma-ov-bg-color);
+}
+
+@media (max-width: 991px) {
+    .logofirma {
+        max-width: 300px;
+    }
+
+    .overlayfirma {
+        position: static;
+    }
+
+    .backFirma {
+        padding: 20px;
+    }
+
+}
+
+
+/*-----------------------------Especialidades--------------------------*/
+.espTitle{
+    font-family: var(--esp-font-title);
+    font-size: var(--esp-font-title-size);
+    color: var(--esp-font-title-color);
+    
+}
+
+.card-title {
+    font-family: var(--esp-font-subt);
+    font-size: var(--esp-font-subt-size);
+    color: var(--esp-font-subt-color);
+}
+
+.card-img-top {
     padding: 20px;
     max-height: 150px;
     width: auto;
 }
 
-.card{
+.card {
     border: none;
     background-color: rgba(255, 255, 255, .7);
     border-radius: 10px !important;
     height: 390px;
     max-height: 50vh;
     width: 280px;
-    
+
 }
-@media (min-width: 991px) {
-    .logoleft {
-        height: 40vh;
-    }
-}
-.card-text{
-    font-size: 16px;
+
+.card-text {
+    font-size: var(--esp-font-size);
+    font-family: var(--esp-font);
+    color: var(--esp-font-color);
     margin-bottom: 10px;
     text-align: justify;
     word-spacing: 1px;
-    word-break: break-all;
-    hyphens: auto;
 }
 
-.card-body{
+.card-body {
     margin-bottom: 10px;
 }
 
 
 /* .especialidadesSec{
     background-image: linear-gradient(to bottom, #b18d57, #7b623c ) !important;
-    
 
     padding: 20px 0px 20px 0px;
 } */
 
-.especialidadesSec{
+.especialidadesSec {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(177, 141, 87, 1), rgba(0, 0, 0, 0));
+    background: var(--esp-ov-bg-color);
     /* background: rgba(177, 141, 87, .7); */
 }
 
-.cardgroupstyle{
+.cardgroupstyle {
     display: flex;
     align-items: center;
     padding: 5vw;
     margin: 10px;
 }
 
-.colesp{
+.colesp {
     padding: 10px;
 }
 
-.mainTitle{
-    font-size: 57px;
-    color: #b18d57;
-    margin-top: 20px;
+/*-----------------------------Clientes--------------------------*/
+.containerStyleClientes {
+    background-color: #b18d57;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    min-height: 70vh;
+}
+
+
+.clienteslogos img {
+    height: auto;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7vh;
+}
+
+.clienteslogos {
+    display: flex;
+}
+/* .clienteslogos img{
+    filter: hue-rotate(120deg) brightness(51.8%) saturate(36.6%);
+    filter: sepia(100%);
+} */
+
+.backClientes  {
+    background-color: var(--clientes-bg-color);
+    padding: 50px;
+    margin: 5vh 0vh;
+    
+}
+
+.backClientes h1 {
+    font-family: var(--clientes-font-title);
+    text-align: var(--clientes-txt-align);
+    color: var(--clientes-font-title-color);
+}
+
+.backClientes  p {
+    font-family: var(--clientes-font);
+    text-align: var(--clientes-txt-align);
+    color: var(--clientes-font-color);
+}
+
+.overlayClientes  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clientes-ov-bg-color);
 }
 
 @media (max-width: 991px) {
-    .mainTitle {
-        font-size: 46px;
-        
+
+    .overlayClientes {
+        position: static;
+    }
+
+    .backClientes {
+        padding: 20px;
+    }
+    .clienteslogos img {
+        width: 50px;
     }
 }
 
-.mainLogo{
-    width: 30%; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    min-width: 280px;
+
+/*-----------------------------Contacto--------------------------*/
+.contactodiv {
+    background-color: #b18d57;
+    padding: 100px;
 }
 
+.hidehr {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .contactodiv {
+        padding: 20px;
+    }
+
+    .hidehr {
+        display: block;
+    }
+}
+
+
+/*-----------------------------Footer--------------------------*/
+
 .text-golden {
-    color: #c6c2bd; /* Código de color dorado */
+    color: #c6c2bd;
     margin-right: 10px;
 }
 
-.footerLogo{
-    width: 30%; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+.footerLogo {
+    width: 30%;
+    height: auto;
     min-width: 280px;
 }
 
@@ -189,7 +440,7 @@ h1{
     justify-content: space-between;
 }
 
-.hidehrfooter{
+.hidehrfooter {
     display: none;
 }
 
@@ -197,82 +448,30 @@ h1{
     .footerSocialMediaNav {
         text-align: center;
     }
-    .hidehrfooter{
+
+    .hidehrfooter {
         display: inline;
     }
 }
 
 
-.leyendaDerechos{
+.leyendaDerechos {
     text-align: right;
     color: #c6c2bd;
 }
 
-.footerStyle{
+.footerStyle {
     color: #c6c2bd !important;
 }
 
-/* Estilo para colocar elementos en bloques verticales */
+
 .footernav a {
     display: block;
-    margin-bottom: 5px; /* Espacio entre los elementos */
+    margin-bottom: 5px;
     color: #c6c2bd !important;
     text-decoration: none;
 }
 
 .footernav a:hover {
     text-decoration: underline;
-}
-
-
-.contactodiv{
-    background-color: #b18d57;
-    padding: 100px;
-}
-
-.backFirma{
-    background-color: none;
-    padding: 50px;
-    margin: 5vh 0vh;
-    text-align: left;
-    color:white;
-}
-
-.logofirma{
-    width: 100%;
-    max-width: 450px;
-    margin: 20px 0px ;
-}
-
-
-
-.overlayfirma{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-}
-
-.hidehr{
-    display: none;
-}
-
-@media (max-width: 991px) {
-    .logofirma{
-        max-width: 300px;
-    }
-    .overlayfirma{
-        position: static;
-    }
-    .backFirma{
-        padding: 20px;
-    }
-    .contactodiv{
-        padding: 20px;
-    }
-    .hidehr{
-        display: block;
-    }
 }

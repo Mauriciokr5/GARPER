@@ -23,18 +23,17 @@ const Header = () => {
     return (
         <Navbar expand="lg" className={`header ${scrolling ? 'scrolling' : ''}`}>
             <Navbar.Brand href="#home" className="logoleft">
-            <img src={logo} alt="Logo" className="logo" ></img>
+                <img src={logo} alt="Logo" className="logo" ></img>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbar-nav" className="custom-toggler"/>
+            <Navbar.Toggle aria-controls="navbar-nav" className="custom-toggler" />
             <Navbar.Collapse id="navbar-nav" className=" justify-content-center">
                 <Nav className="ml-auto align-items-center">
-
+                    <Nav.Link href="#Firma">Nuestra firma</Nav.Link>
                     <Nav.Link href="#Especialidades">Especialidades</Nav.Link>
-                    <Nav.Link href="#Firma">Nuestra Firma</Nav.Link>
                     <Navbar.Brand href="/" className="logoMid">
                         <img src={logo} alt="Logo" className="logo" ></img>
                     </Navbar.Brand>
-                    <Nav.Link href="#Clientes">Clientes</Nav.Link>
+                    <Nav.Link href="#Clientes">Nuestros clientes</Nav.Link>
                     <Nav.Link href="#Contacto">Contacto</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
