@@ -68,8 +68,25 @@
     --clientes-bg-color: var(--sec-color);
     --clientes-ov-bg-color: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 
-}
 
+
+    --contacto-font-title: var(--main-font);
+    --contacto-font-title-size: 22px;
+    --contacto-font-title-color: var(--thr-color);
+
+    --contacto-font: var(--main-font);
+    --contacto-font-size: 22px;
+    --contacto-font-color: var(--thr-color);    
+
+    --contacto-font-label: var(--main-font);
+    --contacto-font-label-size: 22px;
+    --contacto-font-label-color: var(--thr-color);
+
+    --contacto-bg-color: var(--sec-color);
+    --contacto-bg2-color: var(--sec-color);
+    --contacto-ov-bg-color: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+
+}
 /*-----------------------------Header--------------------------*/
 nav {
     background-color: var(--nav-bg-color);
@@ -254,6 +271,12 @@ nav a {
 
     .backFirma {
         padding: 20px;
+        margin: 0vh 0vh;
+    }
+
+    .containerFirma{
+        margin: 0;
+        padding: 0;
     }
 
 }
@@ -401,9 +424,43 @@ nav a {
 
 
 /*-----------------------------Contacto--------------------------*/
-.contactodiv {
-    background-color: #b18d57;
+.containerStyleContacto {
+    background-color: var(--contacto-bg-color);
     padding: 100px;
+}
+.backContacto{
+    background-color: var(--contacto-bg2-color);
+}
+
+.backContacto h1{
+    font-family: var(--contacto-font-title);
+    font-size: var(--contacto-font-title-size);
+    color: var(--contacto-font-title-color);
+}
+
+.backContacto p{
+    font-family: var(--contacto-font);
+    font-size: var(--contacto-font-size);
+    color: var(--contacto-font-color);
+}
+
+.form-label{
+    font-family: var(--contacto-font-label);
+    font-size: var(--contacto-font-label-size);
+    color: var(--contacto-font-label-color);
+}
+
+.form-control{
+    border-radius: 0px;
+}
+
+.btn {
+    background-color: #931621;
+    border-color: #2E3532;
+    margin-top: 20px;
+    border-radius: 0px;
+    padding: 7px 15px;
+    float: right;
 }
 
 .hidehr {
@@ -411,8 +468,8 @@ nav a {
 }
 
 @media (max-width: 991px) {
-    .contactodiv {
-        padding: 20px;
+    .containerStyleContacto {
+        padding: 10px;
     }
 
     .hidehr {

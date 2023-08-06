@@ -21,7 +21,7 @@ const Firma = () => {
     return (
         <div  style={containerStyle} id='Firma'>
             <div className="overlayfirma d-flex align-items-center">
-                <Container>
+                <Container className='containerFirma'>
                     <Row>
                         <Col lg={{ span: 4, offset: 1 }} className="order-lg-2 d-flex align-items-center justify-content-center">
                             <img className="logofirma" src={logoCompleto} alt="Logo" ></img>
